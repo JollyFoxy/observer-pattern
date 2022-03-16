@@ -20,13 +20,13 @@ namespace Fil1
             subject.State = 3;
 
             Console.WriteLine("Наблюдатель №1: " + observer1.Counter);
-            Console.WriteLine("Наблюдатель №2: " + observer2.Counter+ "\n");
+            Console.WriteLine("Наблюдатель №2: " + observer2.Counter + "\n");
 
             subject.RegisterObserver(observer2);
             subject.State = 5;
 
             Console.WriteLine("Наблюдатель №1: " + observer1.Counter);
-            Console.WriteLine("Наблюдатель №2: " + observer2.Counter+ "\n");
+            Console.WriteLine("Наблюдатель №2: " + observer2.Counter + "\n");
 
             subject.RemoveObserver(observer2);
             subject.State = 0;
